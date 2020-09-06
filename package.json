@@ -1,0 +1,23 @@
+{
+  "name": "claudia-api-builder-typescript",
+  "version": "1.0.0",
+  "description": "Typescript support for claudia-api-builder library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc && cp -R  src/@types dist && cp src/index.d.ts dist"
+  },
+  "author": "Pavlo Huk",
+  "license": "ISC",
+  "dependencies": {
+    "claudia-api-builder": "4.1.2",
+    "reflect-metadata": "0.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "14.6.0",
+    "typescript": "4.0.2"
+  }
+}
