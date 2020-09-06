@@ -1,12 +1,16 @@
 {
   "name": "claudia-api-builder-typescript",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Typescript support for claudia-api-builder library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
+  "repository": "git://github.com/hukpavlo/claudia-api-builder-typescript.git",
   "scripts": {
     "build": "rm -rf dist && tsc && cp -R  src/@types dist && cp src/index.d.ts dist"
   },
